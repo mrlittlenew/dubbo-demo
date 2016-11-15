@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://www.cnblogs.com/Javame/p/3632473.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/bundle-CodingLife.css">
+<link type="text/css" rel="stylesheet" href="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/87247.css">
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/bundle-CodingLife-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/Javame/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/Javame/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/Javame/wlwmanifest.xml">
+<script src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/jquery.js.下载" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'Javame', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/blog-common.js.下载" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+<!--PageBeginHtml Block Begin-->
+<a href="http://www.51.la/?17004404" target="_blank"><img alt="我要啦免费统计" src="http://img.users.51.la/17004404.asp" style="border:none">
+</a><!--
+<div id="home1" class="wy">
+<br>
+<a href="http://www.cnblogs.com/Javame/p/3835575.html">
+<img src="http://images.cnblogs.com/cnblogs_com/Javame/604499/o_2.jpg" style="width:150px;">
+</a>-->
+
+
+
+<div id="home1" class="yw">
+
+
+</div>
+<!--PageBeginHtml Block End-->
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/Javame/"><img id="blogLogo" src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/Javame/">SOA服务治理办公室</a></h1>
+<h2>_    R&amp;D Test Engr Watir-WebDriver ——软件测试的自动化时代 QQ群：160409929 微信：wonter         脑子不好，记下来，以后忘了回来看看 ...</h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/Javame/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E4%B8%80%E5%8D%81%E4%B8%80.">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/Javame/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/Javame/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 115&nbsp; </span>
+<span id="stats_article_count">文章 - 2&nbsp; </span>
+<span id="stats-comment_count">评论 - 91</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/Javame/p/3632473.html">最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><h2>&nbsp;1. Dubbo是什么？</h2>
+<p><span>Dubbo是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，以及SOA服务治理方案。简单的说，</span><span><span>dubbo就是个服务框架，如果没有分布式的需求，其实是不需要用的，只有在分布式的时候，才有dubbo这样的分布式服务框架的需求，并且本质上是个服务调用的东东，<span style="color: #ff0000;"><strong>说白了就是个远程服务调用的分布式框架（告别<span>Web Service模式中的WSdl，以服务者与消费者的方式在dubbo上注册</span>）</strong></span></span></span><br><span>其核心部分包含:</span><br><span>1. 远程通讯: 提供对多种基于长连接的NIO框架抽象封装，包括多种线程模型，序列化，以及“请求-响应”模式的信息交换方式。</span><br><span>2. 集群容错: 提供基于接口方法的透明远程过程调用，包括多协议支持，以及软负载均衡，失败容错，地址路由，动态配置等集群支持。</span><br><span>3. 自动发现: 基于注册中心目录服务，使服务消费方能动态的查找服务提供方，使地址透明，使服务提供方可以平滑增加或减少机器。</span></p>
+<p><a id="post_title_link_5833885" href="http://www.cnblogs.com/Javame/p/5833885.html">基于SOA架构的TDD测试驱动开发模式</a></p>
+<p><a id="post_title_link_5817905" href="http://www.cnblogs.com/Javame/p/5817905.html">服务治理要先于SOA</a></p>
+<p><a id="post_title_link_5811043" href="http://www.cnblogs.com/Javame/p/5811043.html">简述我的SOA服务治理</a>&nbsp;</p>
+<p><a id="post_title_link_5868170" href="http://www.cnblogs.com/Javame/p/5868170.html">从页面走向单元实现真正的业务驱动</a></p>
+<h2><a name="t1"></a><span><span>2. Dubbo能做什么？</span></span></h2>
+<p>
+<span>1.透明化的远程方法调用，就像调用本地方法一样调用远程方法，只需简单配置，没有任何API侵入。 &nbsp; &nbsp; &nbsp;<br>2.软负载均衡及容错机制，可在内网替代F5等硬件负载均衡器，降低成本，减少单点。<br>3. 服务自动注册与发现，不再需要写死服务提供方地址，注册中心基于接口名查询服务提供者的IP地址，并且能够平滑添加或删除服务提供者。<br><br></span><span>Dubbo采用全Spring配置方式，透明化接入应用，对应用没有任何API侵入，只需用Spring加载Dubbo的配置即可，Dubbo基于Spring的Schema扩展进行加载。</span><span><br></span></p>
+<p><span style="color: #ff0000;"><strong>之前使用Web Service，我想测试接口可以通过模拟消息的方式通过soapui或LR进行功能测试或性能测试。但现在使用Dubbo，接口之间不能直接交互，我尝试通过模拟消费者地址测试，结果不堪入目，再而使用jmeter通过junit进行测试，但还是需要往dubbo上去注册，如果再不给提供源代码的前提下，这个测试用例不好写啊....</strong></span></p>
+<p>&nbsp;</p>
+<h2><a name="t2"></a>3. dubbo的架构</h2>
+<div><span lang="EN-US">dubbo</span><span>架构图如下所示：</span></div>
+<div>&nbsp;</div>
+<p><img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/20131224140734734" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4><a name="t3"></a>节点角色说明：</h4>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Provider:&nbsp;暴露服务的服务提供方。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consumer:&nbsp;调用远程服务的服务消费方。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Registry:&nbsp;服务注册与发现的注册中心。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monitor:&nbsp;统计服务的调用次调和调用时间的监控中心。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Container:&nbsp;服务运行容器。</p>
+<p><span style="color: #ff0000;"><strong>这点我觉得非常好，角色分明，可以根据每个节点角色的状态来确定该服务是否正常。</strong></span></p>
+<h4><a name="t4"></a></h4>
+<h4><a name="t5"></a>调用关系说明：</h4>
+<p>
+<span>0 服务容器负责启动，加载，运行服务提供者。</span></p>
+<h4><a name="t6"></a><span>1. 服务提供者在启动时，向注册中心注册自己提供的服务。</span></h4>
+<h4><a name="t7"></a><span>2. 服务消费者在启动时，向注册中心订阅自己所需的服务。</span></h4>
+<h4><a name="t8"></a><span>3. 注册中心返回服务提供者地址列表给消费者，如果有变更，注册中心将基于长连接推送变更数据给消费者。</span></h4>
+<h4><a name="t9"></a><span>4. 服务消费者，从提供者地址列表中，基于软负载均衡算法，选一台提供者进行调用，如果调用失败，再选另一台调用。</span></h4>
+<h4><a name="t10"></a><span>5. 服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一次统计数据到监控中心。</span></h4>
+<p><span style="color: #ff0000;"><strong>dubbo的容错性显而易见，性能方面还没有还得及测，我们系统某页面需要掉5次接口，本来想建议做个缓存，但业务关系不能采纳，还需要研究下dubbo的性能调优问题...</strong></span></p>
+<h2><a name="t11"></a>4. dubbo使用方法。</h2>
+<p><span>Dubbo采用全Spring配置方式，透明化接入应用，对应用没有任何API侵入，只需用Spring加载Dubbo的配置即可，Dubbo基于Spring的Schema扩展进行加载。</span><span>如果不想使用Spring配置，而希望通过API的方式进行调用（不推荐）</span></p>
+<p><span>下面我们就来看看spring配置方式的写法:</span></p>
+<h4><a name="t12"></a>服务提供者：</h4>
+<p><span>1.&nbsp;下载zookeeper注册中心，下载地址：<a href="http://www.apache.org/dyn/closer.cgi/zookeeper/" target="_blank"><span>http://www.apache.org/dyn/closer.cgi/zookeeper/</span></a>&nbsp;&nbsp;下载后解压即可，进入D:\apach-zookeeper-3.4.5\bin，</span></p>
+<p><span>双击zkServer.cmd启动注册中心服务。</span></p>
+<h4><a name="t13"></a><span>2.&nbsp;定义服务接口: (该接口需单独打包，在服务提供方和消费方共享)</span></h4>
+<p>&nbsp;</p>
+<p>&nbsp;<strong><span style="color: #ff0000;">下面这个例子不错，写的很详细可以做个model.</span></strong></p>
+<div class="dp-highlighter bg_html">
+<div class="bar">
+<div class="tools"><strong>[html]</strong><br>
+<div>&nbsp;</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<ol class="dp-xml" start="1">
+<li class="alt"><span><span>package&nbsp;com.unj.dubbotest.provider;&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>import&nbsp;java.util.List;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>public&nbsp;interface&nbsp;DemoService&nbsp;{&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;sayHello(String&nbsp;name);&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;List&nbsp;getUsers();&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>}&nbsp;&nbsp;</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ol></div>
+<p>
+<br><span>在服务提供方实现接口：(对服务消费方隐藏实现)</span></p>
+<p><span style="line-height: 1.5;">&nbsp;</span></p>
+<div class="dp-highlighter bg_html">
+<div class="bar">
+<div class="tools"><strong>[html]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/u012049463/article/details/12161923"><br></a>
+<div>&nbsp;</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<ol class="dp-xml" start="1">
+<li class="alt"><span><span>package&nbsp;com.unj.dubbotest.provider;&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>import&nbsp;java.util.ArrayList;&nbsp;&nbsp;</span></li>
+<li><span>import&nbsp;java.util.LinkedList;&nbsp;&nbsp;</span></li>
+<li class="alt"><span>import&nbsp;java.util.List;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;</span></li>
+<li><span>public&nbsp;class&nbsp;DemoServiceImpl&nbsp;implements&nbsp;DemoService{&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;String&nbsp;sayHello(String&nbsp;name)&nbsp;{&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;"Hello&nbsp;"&nbsp;+&nbsp;name;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;List&nbsp;getUsers()&nbsp;{&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List&nbsp;<span class="attribute">list</span><span>&nbsp;=&nbsp;</span><span class="attribute-value">new</span><span>&nbsp;ArrayList();&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User&nbsp;<span class="attribute">u1</span><span>&nbsp;=&nbsp;</span><span class="attribute-value">new</span><span>&nbsp;User();&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u1.setName("jack");&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u1.setAge(20);&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u1.setSex("男");&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User&nbsp;<span class="attribute">u2</span><span>&nbsp;=&nbsp;</span><span class="attribute-value">new</span><span>&nbsp;User();&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u2.setName("tom");&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u2.setAge(21);&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u2.setSex("女");&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User&nbsp;<span class="attribute">u3</span><span>&nbsp;=&nbsp;</span><span class="attribute-value">new</span><span>&nbsp;User();&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u3.setName("rose");&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u3.setAge(19);&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u3.setSex("女");&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list.add(u1);&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list.add(u2);&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list.add(u3);&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;list;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
+<li class="alt"><span>}&nbsp;&nbsp;</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ol></div>
+<p>&nbsp;</p>
+<div class="panelMacro">用Spring配置声明暴露服务：</div>
+<div class="dp-highlighter bg_html">
+<div class="bar">
+<div class="tools"><strong>[html]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/u012049463/article/details/12161923"><br></a>
+<div>&nbsp;</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<ol class="dp-xml" start="1">
+<li class="alt"><span><span class="tag">&lt;?</span><span class="tag-name">xml</span><span>&nbsp;</span><span class="attribute">version</span><span>=</span><span class="attribute-value">"1.0"</span><span>&nbsp;</span><span class="attribute">encoding</span><span>=</span><span class="attribute-value">"UTF-8"</span><span class="tag">?&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span><span class="tag">&lt;</span><span class="tag-name">beans</span><span>&nbsp;</span><span class="attribute">xmlns</span><span>=</span><span class="attribute-value">"http://www.springframework.org/schema/beans"</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute">xmlns:xsi</span><span>=</span><span class="attribute-value">"http://www.w3.org/2001/XMLSchema-instance"</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute">xmlns:dubbo</span><span>=</span><span class="attribute-value">"http://code.alibabatech.com/schema/dubbo"</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute">xsi:schemaLocation</span><span>="http://www.springframework.org/schema/beans&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.springframework.org/schema/beans/spring-beans.xsd&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://code.alibabatech.com/schema/dubbo&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://code.alibabatech.com/schema/dubbo/dubbo.xsd&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"<span class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comments">&lt;!--&nbsp;具体的实现bean&nbsp;--&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;</span><span class="tag-name">bean</span><span>&nbsp;</span><span class="attribute">id</span><span>=</span><span class="attribute-value">"demoService"</span><span>&nbsp;</span><span class="attribute">class</span><span>=</span><span class="attribute-value">"com.unj.dubbotest.provider.DemoServiceImpl"</span><span>&nbsp;</span><span class="tag">/&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comments">&lt;!--&nbsp;提供方应用信息，用于计算依赖关系&nbsp;--&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;</span><span class="tag-name">dubbo:application</span><span>&nbsp;</span><span class="attribute">name</span><span>=</span><span class="attribute-value">"xixi_provider"</span><span>&nbsp;&nbsp;</span><span class="tag">/&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;使用multicast广播注册中心暴露服务地址&nbsp;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;</span><span class="tag-name">dubbo:registry</span><span>&nbsp;</span><span class="attribute">address</span><span>=</span><span class="attribute-value">"multicast://224.5.6.7:1234"</span><span>&nbsp;</span><span class="tag">/&gt;</span><span>--</span><span class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comments">&lt;!--&nbsp;使用zookeeper注册中心暴露服务地址&nbsp;--&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;</span><span class="tag-name">dubbo:registry</span><span>&nbsp;</span><span class="attribute">address</span><span>=</span><span class="attribute-value">"zookeeper://127.0.0.1:2181"</span><span>&nbsp;</span><span class="tag">/&gt;</span><span>&nbsp;&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comments">&lt;!--&nbsp;用dubbo协议在20880端口暴露服务&nbsp;--&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;</span><span class="tag-name">dubbo:protocol</span><span>&nbsp;</span><span class="attribute">name</span><span>=</span><span class="attribute-value">"dubbo"</span><span>&nbsp;</span><span class="attribute">port</span><span>=</span><span class="attribute-value">"20880"</span><span>&nbsp;</span><span class="tag">/&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comments">&lt;!--&nbsp;声明需要暴露的服务接口&nbsp;--&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;</span><span class="tag-name">dubbo:service</span><span>&nbsp;</span><span class="attribute">interface</span><span>=</span><span class="attribute-value">"com.unj.dubbotest.provider.DemoService"</span><span>&nbsp;</span><span class="attribute">ref</span><span>=</span><span class="attribute-value">"demoService"</span><span>&nbsp;</span><span class="tag">/&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+<li class="alt"><span><span class="tag">&lt;/</span><span class="tag-name">beans</span><span class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ol></div>
+<div class="panelMacro">加载Spring配置，启动服务：</div>
+<div class="panelMacro">
+<div class="dp-highlighter bg_html">
+<div class="bar">
+<div class="tools"><strong>[html]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/u012049463/article/details/12161923"><br></a>
+<div>&nbsp;</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<ol class="dp-xml" start="1">
+<li class="alt"><span><span>package&nbsp;com.unj.dubbotest.provider;&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>import&nbsp;org.springframework.context.support.ClassPathXmlApplicationContext;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>public&nbsp;class&nbsp;Provider&nbsp;{&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;Exception&nbsp;{&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ClassPathXmlApplicationContext&nbsp;<span class="attribute">context</span><span>&nbsp;=&nbsp;</span><span class="attribute-value">new</span><span>&nbsp;ClassPathXmlApplicationContext(new&nbsp;String[]&nbsp;{"applicationContext.xml"});&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;context.start();&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.in.read();&nbsp;//&nbsp;为保证服务一直开着，利用输入流的阻塞来模拟&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li>
+<li><span>}&nbsp;&nbsp;</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ol></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<h4><a name="t14"></a>服务消费者：</h4>
+<p><strong><span style="color: #ff0000;">&nbsp;applicationContext-dubbo.xml 中注册自己需要调用的接口，我刚开始测试的时候需要的接口很多，所以把这个文件写的满满的，后来熟悉了把接口按业务类型分开，写了N多个<strong><span>&nbsp;applicationContext-dubbo-***.xml 简练多了 》。&nbsp;</span></strong></span></strong></p>
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="panelMacro"><span>1.通过Spring配置引用远程服务：</span>
+<div class="panelMacro">
+<div class="dp-highlighter bg_html">
+<div class="bar">
+<div class="tools"><strong>[html]</strong><br>
+<div>&nbsp;</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<ol class="dp-xml" start="1">
+<li class="alt"><span><span class="tag">&lt;?</span><span class="tag-name">xml</span><span>&nbsp;</span><span class="attribute">version</span><span>=</span><span class="attribute-value">"1.0"</span><span>&nbsp;</span><span class="attribute">encoding</span><span>=</span><span class="attribute-value">"UTF-8"</span><span class="tag">?&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span><span class="tag">&lt;</span><span class="tag-name">beans</span><span>&nbsp;</span><span class="attribute">xmlns</span><span>=</span><span class="attribute-value">"http://www.springframework.org/schema/beans"</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute">xmlns:xsi</span><span>=</span><span class="attribute-value">"http://www.w3.org/2001/XMLSchema-instance"</span><span>&nbsp;</span><span class="attribute">xmlns:dubbo</span><span>=</span><span class="attribute-value">"http://code.alibabatech.com/schema/dubbo"</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute">xsi:schemaLocation</span><span>="http://www.springframework.org/schema/beans&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.springframework.org/schema/beans/spring-beans.xsd&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://code.alibabatech.com/schema/dubbo&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://code.alibabatech.com/schema/dubbo/dubbo.xsd&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"<span class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comments">&lt;!--&nbsp;消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样&nbsp;--&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;</span><span class="tag-name">dubbo:application</span><span>&nbsp;</span><span class="attribute">name</span><span>=</span><span class="attribute-value">"hehe_consumer"</span><span>&nbsp;</span><span class="tag">/&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comments">&lt;!--&nbsp;使用zookeeper注册中心暴露服务地址&nbsp;--&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comments">&lt;!--&nbsp;&lt;dubbo:registry&nbsp;address="multicast://224.5.6.7:1234"&nbsp;/&gt;&nbsp;--&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;</span><span class="tag-name">dubbo:registry</span><span>&nbsp;</span><span class="attribute">address</span><span>=</span><span class="attribute-value">"zookeeper://127.0.0.1:2181"</span><span>&nbsp;</span><span class="tag">/&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comments">&lt;!--&nbsp;生成远程服务代理，可以像使用本地bean一样使用demoService&nbsp;--&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;</span><span class="tag-name">dubbo:reference</span><span>&nbsp;</span><span class="attribute">id</span><span>=</span><span class="attribute-value">"demoService"</span><span>&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute">interface</span><span>=</span><span class="attribute-value">"com.unj.dubbotest.provider.DemoService"</span><span>&nbsp;</span><span class="tag">/&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span><span class="tag">&lt;/</span><span class="tag-name">beans</span><span class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ol></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<div class="panelMacro"><span>2.加载Spring配置，并调用远程服务：</span></div>
+<div class="panelMacro">
+<div class="dp-highlighter bg_html">
+<div class="bar">
+<div class="tools"><strong>[html]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/u012049463/article/details/12161923"><br></a>
+<div>&nbsp;</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<ol class="dp-xml" start="1">
+<li class="alt"><span><span>package&nbsp;com.alibaba.dubbo.demo.pp;&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>import&nbsp;java.util.List;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>import&nbsp;org.springframework.context.support.ClassPathXmlApplicationContext;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>import&nbsp;com.unj.dubbotest.provider.DemoService;&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>public&nbsp;class&nbsp;Consumer&nbsp;{&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;Exception&nbsp;{&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ClassPathXmlApplicationContext&nbsp;<span class="attribute">context</span><span>&nbsp;=&nbsp;</span><span class="attribute-value">new</span><span>&nbsp;ClassPathXmlApplicationContext(&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new&nbsp;String[]&nbsp;{&nbsp;"applicationContext.xml"&nbsp;});&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;context.start();&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DemoService&nbsp;<span class="attribute">demoService</span><span>&nbsp;=&nbsp;(DemoService)&nbsp;context.getBean("demoService");&nbsp;//&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;<span class="attribute">hello</span><span>&nbsp;=&nbsp;</span><span class="attribute-value">demoService</span><span>.sayHello("tom");&nbsp;//&nbsp;ִ&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(hello);&nbsp;//&nbsp;&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List&nbsp;<span class="attribute">list</span><span>&nbsp;=&nbsp;</span><span class="attribute-value">demoService</span><span>.getUsers();&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(list&nbsp;!=&nbsp;null&nbsp;&amp;&amp;&nbsp;list.size()&nbsp;<span class="tag">&gt;</span><span>&nbsp;0)&nbsp;{&nbsp;&nbsp;</span></span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;<span class="attribute">i</span><span>&nbsp;=&nbsp;</span><span class="attribute-value">0</span><span>;&nbsp;i&nbsp;</span><span class="tag">&lt;</span><span>&nbsp;</span><span class="tag-name">list.size</span><span>();&nbsp;i++)&nbsp;{&nbsp;&nbsp;</span></span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(list.get(i));&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;System.out.println(demoService.hehe());&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.in.read();&nbsp;&nbsp;</span></li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
+<li><span>&nbsp;&nbsp;</span></li>
+<li class="alt"><span>}&nbsp;&nbsp;</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ol></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<p>
+<span>调用结果为：</span></p>
+<p>&nbsp;</p>
+<p><span><img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/20131224152934546" alt=""><br></span></p>
+<p><span><span>dubbo管理页面：</span></span></p>
+<p><strong><span style="color: #ff0000;">这个管理页面还需要部署一个环境的，一开始我还以为是dubbo自带的，找了半天没有找到....</span></strong></p>
+<p>&nbsp;</p>
+<p><span><span><img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/20131224152811531" alt=""><br></span></span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>应用页面：</span></p>
+<p><img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/20131224152822062" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>提供者页面:</p>
+<p><img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/20131224153419968" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>消费者页面：</p>
+<p><img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/20131224152829015" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>服务页面：</p>
+<p><img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/20131224152846578" alt=""></p>
+<p><span style="color: #ff0000;">测试是否成功，我觉得只要看看状态是否正常，就ok了 ....</span></p>
+<p>&nbsp;</p>
+<h2>&nbsp;　　　　　　　　　　　　　　　　　　　　　　　　感兴趣的M我微信：wonter &nbsp;&nbsp;</h2>
+<p><span><span>案例代码下载：<a href="http://download.csdn.net/detail/yiyu1/7116319">http://download.csdn.net/detail/yiyu1/7116319</a><br></span></span></p>
+<p>&nbsp;</p>
+<p>很多朋友都在问这个管理界面哪来的？他其实是另外一个项目工程，需要下载后部署到web服务器。</p>
+<p>dubbo管理台下载：<a href="http://download.csdn.net/detail/yiyu1/9650594" target="_blank">http://download.csdn.net/detail/yiyu1/9650594</a></p>
+<div class="panelMacro">&nbsp;</div>
+<div class="panelMacro">&nbsp;</div>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h2>SOA服务治理&nbsp;dubbo_zk 服务总线&nbsp;感兴趣的M我微信：wonter &nbsp;&nbsp;</h2>
+<p><img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/291579-20161018161801138-515384433.png" alt="" width="211" height="210"></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p></div><div id="MySignature" style="display: block;">敏捷测试团队，不再仅仅是在coding之后。而是和研发人员贯穿在需求分析、规格说明、自动化单元测试、自动化验收测试、静态代码分析、技术债等环节中。所以敏捷项目必定在将来效率的趋势下成为主流。</div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag">标签: <a href="http://www.cnblogs.com/Javame/tag/dobbo/">dobbo</a>, <a href="http://www.cnblogs.com/Javame/tag/zookeeper/">zookeeper</a></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(3632473,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;f24058a5-7365-e011-a53f-842b2b196315&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/Javame/" target="_blank"><img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/20140422140724.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/Javame/">一十一.</a><br>
+            <a href="http://home.cnblogs.com/u/Javame/followees">关注 - 6</a><br>
+            <a href="http://home.cnblogs.com/u/Javame/followers">粉丝 - 187</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;f24058a5-7365-e011-a53f-842b2b196315&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(3632473,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">13</span>
+    </div>
+    <div class="buryit" onclick="votePost(3632473,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">2</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/Javame/p/3631158.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/Javame/p/3631158.html" title="发布于2014-03-28 17:35">接口测试中三种传参请求（Map、request、Integer）解析</a><br><a href="http://www.cnblogs.com/Javame/p/3632708.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/Javame/p/3632708.html" title="发布于2014-03-29 16:53">基于ZooKeeper的Dubbo注册中心</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2014-03-29 14:08</span> <a href="http://www.cnblogs.com/Javame/">一十一.</a> 阅读(<span id="post_view_count">189005</span>) 评论(<span id="post_comment_count">18</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=3632473" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/Javame/p/3632473.html#" onclick="AddToWz(3632473);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=87247,cb_entryId=3632473,cb_blogApp=currentBlogApp,cb_blogUserGuid='f24058a5-7365-e011-a53f-842b2b196315',cb_entryCreatedDate='2014/3/29 14:08:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<br>
+<div class="feedback_area_title">评论列表</div>
+<div class="feedbackNoItems"></div>	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#2937438" class="layer">#1楼</a><a name="2937438" id="comment_anchor_2937438"></a>  <span class="comment_date">2014-05-12 22:10</span> <a id="a_comment_author_2937438" href="http://home.cnblogs.com/u/633132/" target="_blank">hanjk1234</a> <a href="http://msg.cnblogs.com/send/hanjk1234" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2937438" class="blog_comment_body">有用到 annotation的配置吗? <br>xml的配置太繁琐<br>求指教<br>联QQ 654067194</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2937438,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2937438,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#2937786" class="layer">#2楼</a><a name="2937786" id="comment_anchor_2937786"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2014-05-13 12:13</span> <a id="a_comment_author_2937786" href="http://www.cnblogs.com/Javame/" target="_blank">一十一.</a> <a href="http://msg.cnblogs.com/send/%E4%B8%80%E5%8D%81%E4%B8%80." title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2937786" class="blog_comment_body"><a href="http://www.cnblogs.com/Javame/p/3632473.html#2937438" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2937438);">@</a>
+hanjk1234<br>你在搞dubbo框架，其实dubbo没有你想的那么繁琐，就一个供应方和消费方的关系，俩接口只要在dubbo上注册了，消费方就可以调用供应方的接口了。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2937786,&#39;Digg&#39;,this)">支持(3)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2937786,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2937786_avatar" style="display:none;">http://pic.cnblogs.com/face/291579/20140422140724.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#2937877" class="layer">#3楼</a><a name="2937877" id="comment_anchor_2937877"></a>  <span class="comment_date">2014-05-13 13:18</span> <a id="a_comment_author_2937877" href="http://home.cnblogs.com/u/633132/" target="_blank">hanjk1234</a> <a href="http://msg.cnblogs.com/send/hanjk1234" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2937877" class="blog_comment_body">1:我知道很简单<br>2: 我遇到的问题,可能比较特殊,ok,你不方便提供联系方式,我简单描述下问题 <br><br>官方的 ,annotation 配置<br>需要<br>1:  先启动   服务提供提供方<br>2:  再启动  服务消费者<br><br>那么 <br>假如 B消费者需要A1-A10  共 10个服务提供者,<br>这10个服务提供者分布在不同的项目里, 那我就得 启动11个JVM ,去测试..<br>对吧?<br><br>开发测试阶段 ,这样子完全没法子进行下去了,<br>对不?光启动就费半天功夫<br><br>so :我想 B消费者 在POM.xml   用&lt;scope&gt;test&lt;/scope&gt;  引入A1-A10的具体实现 <br><br>这样子  我启动B 消费者 ,A1-A10也加载进来了<br><br>您看明白我的秒速了吗?</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2937877,&#39;Digg&#39;,this)">支持(1)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2937877,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3068651" class="layer">#4楼</a><a name="3068651" id="comment_anchor_3068651"></a>  <span class="comment_date">2014-11-21 10:28</span> <a id="a_comment_author_3068651" href="http://home.cnblogs.com/u/681546/" target="_blank">Mr.Jie不该有时候</a> <a href="http://msg.cnblogs.com/send/Mr.Jie%E4%B8%8D%E8%AF%A5%E6%9C%89%E6%97%B6%E5%80%99" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3068651" class="blog_comment_body">那个管理页面是要怎么弄出来啊？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3068651,&#39;Digg&#39;,this)">支持(2)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3068651,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3235490" class="layer">#5楼</a><a name="3235490" id="comment_anchor_3235490"></a>  <span class="comment_date">2015-07-26 13:30</span> <a id="a_comment_author_3235490" href="http://home.cnblogs.com/u/740204/" target="_blank">专属妮滴美</a> <a href="http://msg.cnblogs.com/send/%E4%B8%93%E5%B1%9E%E5%A6%AE%E6%BB%B4%E7%BE%8E" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3235490" class="blog_comment_body">很容易理解  谢谢楼主  收藏</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3235490,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3235490,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3256004" class="layer">#6楼</a><a name="3256004" id="comment_anchor_3256004"></a>  <span class="comment_date">2015-08-28 11:19</span> <a id="a_comment_author_3256004" href="http://home.cnblogs.com/u/711249/" target="_blank">晓凨云涌</a> <a href="http://msg.cnblogs.com/send/%E6%99%93%E5%87%A8%E4%BA%91%E6%B6%8C" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3256004" class="blog_comment_body">背景图片，只看见了边缘；吓我一跳；<br>为了弄清，于是找到了<a href="http://images.cnblogs.com/cnblogs_com/Javame/604499/o_6619577869188656494.jpg" target="_blank">http://images.cnblogs.com/cnblogs_com/Javame/604499/o_6619577869188656494.jpg</a>；；</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3256004,&#39;Digg&#39;,this)">支持(3)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3256004,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3269025" class="layer">#7楼</a><a name="3269025" id="comment_anchor_3269025"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2015-09-18 08:58</span> <a id="a_comment_author_3269025" href="http://www.cnblogs.com/Javame/" target="_blank">一十一.</a> <a href="http://msg.cnblogs.com/send/%E4%B8%80%E5%8D%81%E4%B8%80." title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3269025" class="blog_comment_body"><a href="http://www.cnblogs.com/Javame/p/3632473.html#3256004" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3256004);">@</a>
+晓凨云涌<br>很漂亮吧 ^^</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3269025,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3269025,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3269025_avatar" style="display:none;">http://pic.cnblogs.com/face/291579/20140422140724.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3365900" class="layer">#8楼</a><a name="3365900" id="comment_anchor_3365900"></a>  <span class="comment_date">2016-02-24 11:06</span> <a id="a_comment_author_3365900" href="http://www.cnblogs.com/ghostking/" target="_blank">西农大叔</a> <a href="http://msg.cnblogs.com/send/%E8%A5%BF%E5%86%9C%E5%A4%A7%E5%8F%94" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3365900" class="blog_comment_body">good  thanks 。。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3365900,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3365900,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3365900_avatar" style="display:none;">http://pic.cnblogs.com/face/612305/20140624205748.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3420800" class="layer">#9楼</a><a name="3420800" id="comment_anchor_3420800"></a>  <span class="comment_date">2016-05-01 10:24</span> <a id="a_comment_author_3420800" href="http://www.cnblogs.com/newsea/" target="_blank">NewSea</a> <a href="http://msg.cnblogs.com/send/NewSea" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3420800" class="blog_comment_body">Java版的 WCF！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3420800,&#39;Digg&#39;,this)">支持(1)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3420800,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3420800_avatar" style="display:none;">http://pic.cnblogs.com/face/u18191.jpg</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3464273" class="layer">#10楼</a><a name="3464273" id="comment_anchor_3464273"></a>  <span class="comment_date">2016-07-05 18:22</span> <a id="a_comment_author_3464273" href="http://www.cnblogs.com/whs123/" target="_blank">狼宝宝</a> <a href="http://msg.cnblogs.com/send/%E7%8B%BC%E5%AE%9D%E5%AE%9D" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3464273" class="blog_comment_body">加项目实战交流群：472213887</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3464273,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3464273,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3474668" class="layer">#11楼</a><a name="3474668" id="comment_anchor_3474668"></a>  <span class="comment_date">2016-07-22 10:15</span> <a id="a_comment_author_3474668" href="http://www.cnblogs.com/chaorenxx/" target="_blank">chaorenxx</a> <a href="http://msg.cnblogs.com/send/chaorenxx" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3474668" class="blog_comment_body"><a href="http://www.cnblogs.com/Javame/p/3632473.html#3256004" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3256004);">@</a>
+晓凨云涌<br>哥们，我服。冲这个图片也要回复你</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3474668,&#39;Digg&#39;,this)">支持(1)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3474668,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3522958" class="layer">#12楼</a><a name="3522958" id="comment_anchor_3522958"></a>  <span class="comment_date">2016-09-30 10:31</span> <a id="a_comment_author_3522958" href="http://www.cnblogs.com/diyunpeng/" target="_blank">规格严格-功夫到家</a> <a href="http://msg.cnblogs.com/send/%E8%A7%84%E6%A0%BC%E4%B8%A5%E6%A0%BC-%E5%8A%9F%E5%A4%AB%E5%88%B0%E5%AE%B6" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3522958" class="blog_comment_body">学写了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3522958,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3522958,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3525283" class="layer">#13楼</a><a name="3525283" id="comment_anchor_3525283"></a>  <span class="comment_date">2016-10-07 22:44</span> <a id="a_comment_author_3525283" href="http://home.cnblogs.com/u/664337/" target="_blank">mathlpz</a> <a href="http://msg.cnblogs.com/send/mathlpz" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3525283" class="blog_comment_body">楼主，最下面的那个管理页面是要怎么弄出来啊？<br>急求！！！<br>谢谢大神！！！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3525283,&#39;Digg&#39;,this)">支持(1)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3525283,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3527362" class="layer">#14楼</a><a name="3527362" id="comment_anchor_3527362"></a>  <span class="comment_date">2016-10-10 15:10</span> <a id="a_comment_author_3527362" href="http://home.cnblogs.com/u/1007442/" target="_blank">Java小龙菜鸟</a> <a href="http://msg.cnblogs.com/send/Java%E5%B0%8F%E9%BE%99%E8%8F%9C%E9%B8%9F" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3527362" class="blog_comment_body">呜呜，听不懂啊</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3527362,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3527362,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3527363" class="layer">#15楼</a><a name="3527363" id="comment_anchor_3527363"></a>  <span class="comment_date">2016-10-10 15:11</span> <a id="a_comment_author_3527363" href="http://home.cnblogs.com/u/1007442/" target="_blank">Java小龙菜鸟</a> <a href="http://msg.cnblogs.com/send/Java%E5%B0%8F%E9%BE%99%E8%8F%9C%E9%B8%9F" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3527363" class="blog_comment_body">我太辣鸡了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3527363,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3527363,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3527943" class="layer">#16楼</a><a name="3527943" id="comment_anchor_3527943"></a>  <span class="comment_date">2016-10-11 11:04</span> <a id="a_comment_author_3527943" href="http://www.cnblogs.com/geekdc/" target="_blank">飞龙在天001</a> <a href="http://msg.cnblogs.com/send/%E9%A3%9E%E9%BE%99%E5%9C%A8%E5%A4%A9001" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3527943" class="blog_comment_body">同求管理界面是如何搞出来的</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3527943,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3527943,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3527943_avatar" style="display:none;">http://pic.cnblogs.com/face/849431/20160201104545.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3527953" class="layer">#17楼</a><a name="3527953" id="comment_anchor_3527953"></a>  <span class="comment_date">2016-10-11 11:11</span> <a id="a_comment_author_3527953" href="http://www.cnblogs.com/geekdc/" target="_blank">飞龙在天001</a> <a href="http://msg.cnblogs.com/send/%E9%A3%9E%E9%BE%99%E5%9C%A8%E5%A4%A9001" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3527953" class="blog_comment_body">按照博主的例子，运行Consumer.java中的main方法：<br>报出如下警告是什么意思？<br><div class="cnblogs_Highlighter sh-gutter"><div><div id="highlighter_101602" class="syntaxhighlighter  java"><div class="toolbar"><span><a href="http://www.cnblogs.com/Javame/p/3632473.html#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java plain">Hello tom</code></div><div class="line number2 index1 alt1"><code class="java plain">十月 </code><code class="java value">11</code><code class="java plain">, </code><code class="java value">2016</code> <code class="java value">11</code><code class="java plain">:</code><code class="java value">06</code><code class="java plain">:</code><code class="java value">04</code> <code class="java plain">上午 com.alibaba.com.caucho.hessian.io.SerializerFactory getDeserializer</code></div><div class="line number3 index2 alt2"><code class="java plain">警告: Hessian/Burlap: </code><code class="java string">'com.unj.dubbotest.provider.impl.User'</code> <code class="java plain">is an unknown </code><code class="java keyword">class</code> <code class="java plain">in sun.misc.Launcher$AppClassLoader</code><code class="java color1">@47415dbf</code><code class="java plain">:</code></div><div class="line number4 index3 alt1"><code class="java plain">java.lang.ClassNotFoundException: com.unj.dubbotest.provider.impl.User</code></div><div class="line number5 index4 alt2"><code class="java plain">十月 </code><code class="java value">11</code><code class="java plain">, </code><code class="java value">2016</code> <code class="java value">11</code><code class="java plain">:</code><code class="java value">06</code><code class="java plain">:</code><code class="java value">04</code> <code class="java plain">上午 com.alibaba.com.caucho.hessian.io.SerializerFactory getDeserializer</code></div><div class="line number6 index5 alt1"><code class="java plain">警告: Hessian/Burlap: </code><code class="java string">'com.unj.dubbotest.provider.impl.User'</code> <code class="java plain">is an unknown </code><code class="java keyword">class</code> <code class="java plain">in sun.misc.Launcher$AppClassLoader</code><code class="java color1">@47415dbf</code><code class="java plain">:</code></div><div class="line number7 index6 alt2"><code class="java plain">java.lang.ClassNotFoundException: com.unj.dubbotest.provider.impl.User</code></div><div class="line number8 index7 alt1"><code class="java plain">十月 </code><code class="java value">11</code><code class="java plain">, </code><code class="java value">2016</code> <code class="java value">11</code><code class="java plain">:</code><code class="java value">06</code><code class="java plain">:</code><code class="java value">04</code> <code class="java plain">上午 com.alibaba.com.caucho.hessian.io.SerializerFactory getDeserializer</code></div><div class="line number9 index8 alt2"><code class="java plain">警告: Hessian/Burlap: </code><code class="java string">'com.unj.dubbotest.provider.impl.User'</code> <code class="java plain">is an unknown </code><code class="java keyword">class</code> <code class="java plain">in sun.misc.Launcher$AppClassLoader</code><code class="java color1">@47415dbf</code><code class="java plain">:</code></div><div class="line number10 index9 alt1"><code class="java plain">java.lang.ClassNotFoundException: com.unj.dubbotest.provider.impl.User</code></div><div class="line number11 index10 alt2"><code class="java plain">{sex=m, name=jack, age=</code><code class="java value">20</code><code class="java plain">}</code></div><div class="line number12 index11 alt1"><code class="java plain">{sex=m, name=tom, age=</code><code class="java value">21</code><code class="java plain">}</code></div><div class="line number13 index12 alt2"><code class="java plain">{sex=w, name=rose, age=</code><code class="java value">19</code><code class="java plain">}</code></div></div></td></tr></tbody></table></div></div></div></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3527953,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3527953,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3527953_avatar" style="display:none;">http://pic.cnblogs.com/face/849431/20160201104545.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/Javame/p/3632473.html#3528044" class="layer">#18楼</a><a name="3528044" id="comment_anchor_3528044"></a>[<span class="louzhu">楼主</span>]<span id="comment-maxId" style="display:none;">3528044</span><span id="comment-maxDate" style="display:none;">2016/10/11 12:52:16</span>  <span class="comment_date">2016-10-11 12:52</span> <a id="a_comment_author_3528044" href="http://www.cnblogs.com/Javame/" target="_blank">一十一.</a> <a href="http://msg.cnblogs.com/send/%E4%B8%80%E5%8D%81%E4%B8%80." title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3528044" class="blog_comment_body"><a href="http://www.cnblogs.com/Javame/p/3632473.html#3525283" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3525283);">@</a>
+mathlpz<br>@飞龙在天001<br>dubbo管理台是一个web工程，给你给包解压到tomcat webapps下面，启动就行了。<br><a href="http://download.csdn.net/detail/yiyu1/9650594" target="_blank">http://download.csdn.net/detail/yiyu1/9650594</a></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3528044,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3528044,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3528044_avatar" style="display:none;">http://pic.cnblogs.com/face/291579/20140422140724.png</span>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/Javame/p/3632473.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/Javame/p/3632473.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br><a href="http://vcloud.163.com/?adchannel=bp_cnblogs2" target="_blank">【推荐】用1%的研发投入，搭载3倍性能的网易视频云技术</a><br><a href="http://rongcloud.cn/reports/journal2" target="_blank">【推荐】融云发布 App 社交化白皮书 IM 提升活跃超 8 倍</a><br></div>
+<div id="opt_under_post"></div>
+<div id="ad_c1" class="c_ad_block"><a href="http://www.gcpowertools.com.cn/order/collectdemand.htm?utm_source=cnblogs&amp;utm_medium=blogpage&amp;utm_term=bottom&amp;utm_content=ads&amp;utm_campaign=community" target="_blank"><img width="300" height="250" src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/24442-20161107115546061-1502903756.png" alt=""></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/557125/" target="_blank">谷歌超分辨率技术 RAISR ：模糊图片瞬变高清，速度提升数十倍</a><br> ·  <a href="http://news.cnblogs.com/n/557124/" target="_blank">华为Mate 9上手：一台中年审美情趣手机的自我修养</a><br> ·  <a href="http://news.cnblogs.com/n/557123/" target="_blank">刷指纹也可以搞慈善，Apple Pay将支持向非盈利性组织捐赠</a><br> ·  <a href="http://news.cnblogs.com/n/557122/" target="_blank">微软：游戏才是HoloLens走近大众的敲门砖</a><br> ·  <a href="http://news.cnblogs.com/n/557121/" target="_blank">神剧《西部世界》续订第二季，迷宫般的剧情才刚刚开始</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="ad_c2" class="c_ad_block"><a href="https://www.jiguang.cn/devservice/?from=cnblogs01" target="_blank"><img width="468" height="60" src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/24442-20161114133622451-1554357151.jpg" alt=""></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/555750/" target="_blank">循序渐进地代码重构</a><br> ·  <a href="http://kb.cnblogs.com/page/554496/" target="_blank">技术的正宗与野路子</a><br> ·  <a href="http://kb.cnblogs.com/page/553682/" target="_blank">陈皓：什么是工程师文化？</a><br> ·  <a href="http://kb.cnblogs.com/page/551422/" target="_blank">没那么难，谈CSS的设计模式</a><br> ·  <a href="http://kb.cnblogs.com/page/550625/" target="_blank">程序猿媳妇儿注意事项</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><p>
+
+<embed align="center" wmode="transparent" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.swf" quality="high" bgcolor="#ffffff" width="160" height="70" name="honehoneclock" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+     </p>
+     <p>
+网名：
+一十一 <br>
+工龄：
+5年 <br>
+手机：
+13400065433 <br>
+微信号：
+wonter <br>
+关键词：
+性能 安全 自动化
+白盒测试 测试研发 <br>
+web安全全面覆盖渗入测试 <br>
+
+web安全等级评估 <br>
+
+web安全漏洞评级 <br>
+
+web安全漏洞修改建议 <br>
+
+web安全培训 <br>
+
+收费标准： <br>
+
+严重漏洞：200元 <br>
+
+中等漏洞：100元 <br>
+
+普通漏洞：50元（共性打包） <br>
+
+警告漏洞：20元（共性打包） <br>
+
+回归安全评估：100元 <br>
+
+中小型网站总价上限5000元<br>
+
+大型网站含子网站上限20000元 <br>
+
+长期合作总价8折，回归安全评估5折。第二次合作生效。 <br>
+
+联系人：十一 <br>
+
+微信号：wonter <br>
+
+不接黑色生意！ <br>
+
+乌云资深白帽子，对安全测试颇有心得。白帽子成功案例很多，主要擅长领域：SQL注入 脱库、站点伪造、寻找架构漏洞，越过效验获取资源等。
+
+     <a style="padding-right:20px;" href="http://wpa.qq.com/msgrd?v=3&amp;uin=50625190&amp;site=qq&amp;menu=yes" target="_blank"><img style="vertical-align:bottom; border:0px" src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/QQonline01.jpg" alt="点击这里给我发消息"></a>
+     </p>
+     <br>
+     <p>
+     <a href="http://weibo.com/wontter" target="_blank">
+     <img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/100905444732.png" alt="">
+
+<img src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/o_111111.jpg">
+</a>
+<br>
+访问人数：<br>
+<a href="http://www.amazingcounters.com/"><img border="0" src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/counter.php" alt="AmazingCounters.com"></a>
+<br>
+总访问量：<br>
+<a href="http://www.amazingcounters.com/"><img border="0" src="./最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。 - 一十一. - 博客园_files/counter(1).php" alt="AmazingCounters.com"></a> <br>
+     </p><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/Javame/">一十一.</a><br>园龄：<a href="http://home.cnblogs.com/u/Javame/" title="入园时间：2011-04-13">5年7个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/Javame/followers/">187</a><br>关注：<a href="http://home.cnblogs.com/u/Javame/followees/">6</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;f24058a5-7365-e011-a53f-842b2b196315&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2016/10/01&#39;);return false;">&lt;</a></td><td align="center">2016年11月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2016/12/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">30</td><td class="CalOtherMonthDay" align="center">31</td><td align="center"><a href="http://www.cnblogs.com/Javame/archive/2016/11/01.html"><u>1</u></a></td><td align="center">2</td><td align="center">3</td><td align="center">4</td><td class="CalWeekendDay" align="center">5</td></tr><tr><td class="CalWeekendDay" align="center">6</td><td align="center"><a href="http://www.cnblogs.com/Javame/archive/2016/11/07.html"><u>7</u></a></td><td align="center">8</td><td align="center">9</td><td align="center">10</td><td align="center">11</td><td class="CalWeekendDay" align="center">12</td></tr><tr><td class="CalWeekendDay" align="center">13</td><td align="center">14</td><td class="CalTodayDay" align="center">15</td><td align="center">16</td><td align="center">17</td><td align="center">18</td><td class="CalWeekendDay" align="center">19</td></tr><tr><td class="CalWeekendDay" align="center">20</td><td align="center">21</td><td align="center">22</td><td align="center">23</td><td align="center">24</td><td align="center">25</td><td class="CalWeekendDay" align="center">26</td></tr><tr><td class="CalWeekendDay" align="center">27</td><td align="center">28</td><td align="center">29</td><td align="center">30</td><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td></tr><tr><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td><td class="CalOtherMonthDay" align="center">8</td><td class="CalOtherMonthDay" align="center">9</td><td class="CalOtherMonthDay" align="center">10</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+<div id="widget_my_google" class="div_my_zzk"><input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk"></div>
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/Javame/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/Javame/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/Javame/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/Javame/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/Javame/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div></div><div id="sidebar_toptags" class="sidebar-block">
+<div class="catListTag">
+<h3 class="catListTitle">我的标签</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/Javame/tag/java/">java</a>(10)</li><li><a href="http://www.cnblogs.com/Javame/tag/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">性能测试</a>(9)</li><li><a href="http://www.cnblogs.com/Javame/tag/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/">性能调优</a>(5)</li><li><a href="http://www.cnblogs.com/Javame/tag/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">软件测试</a>(5)</li><li><a href="http://www.cnblogs.com/Javame/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>(5)</li><li><a href="http://www.cnblogs.com/Javame/tag/watir-webdriver/">watir-webdriver</a>(5)</li><li><a href="http://www.cnblogs.com/Javame/tag/%E6%B5%8B%E8%AF%95/">测试</a>(3)</li><li><a href="http://www.cnblogs.com/Javame/tag/js/">js</a>(3)</li><li><a href="http://www.cnblogs.com/Javame/tag/Linux/">Linux</a>(3)</li><li><a href="http://www.cnblogs.com/Javame/tag/LoadRunner/">LoadRunner</a>(3)</li><li><a href="http://www.cnblogs.com/Javame/tag/">更多</a></li>
+</ul>
+</div></div><div id="sidebar_categories">
+<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/Javame/archive/2016/11.html">2016年11月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/Javame/archive/2016/10.html">2016年10月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/Javame/archive/2016/09.html">2016年9月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/Javame/archive/2016/08.html">2016年8月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/Javame/archive/2016/07.html">2016年7月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/Javame/archive/2016/05.html">2016年5月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="http://www.cnblogs.com/Javame/archive/2016/03.html">2016年3月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="http://www.cnblogs.com/Javame/archive/2016/01.html">2016年1月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="http://www.cnblogs.com/Javame/archive/2015/12.html">2015年12月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="http://www.cnblogs.com/Javame/archive/2015/11.html">2015年11月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_10" href="http://www.cnblogs.com/Javame/archive/2015/07.html">2015年7月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_11" href="http://www.cnblogs.com/Javame/archive/2015/06.html">2015年6月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_12" href="http://www.cnblogs.com/Javame/archive/2015/05.html">2015年5月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_13" href="http://www.cnblogs.com/Javame/archive/2015/04.html">2015年4月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_14" href="http://www.cnblogs.com/Javame/archive/2015/03.html">2015年3月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_15" href="http://www.cnblogs.com/Javame/archive/2015/02.html">2015年2月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_16" href="http://www.cnblogs.com/Javame/archive/2015/01.html">2015年1月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_17" href="http://www.cnblogs.com/Javame/archive/2014/12.html">2014年12月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_18" href="http://www.cnblogs.com/Javame/archive/2014/11.html">2014年11月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_19" href="http://www.cnblogs.com/Javame/archive/2014/10.html">2014年10月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_20" href="http://www.cnblogs.com/Javame/archive/2014/09.html">2014年9月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_21" href="http://www.cnblogs.com/Javame/archive/2014/08.html">2014年8月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_22" href="http://www.cnblogs.com/Javame/archive/2014/07.html">2014年7月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_23" href="http://www.cnblogs.com/Javame/archive/2014/06.html">2014年6月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_24" href="http://www.cnblogs.com/Javame/archive/2014/05.html">2014年5月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_25" href="http://www.cnblogs.com/Javame/archive/2014/04.html">2014年4月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_26" href="http://www.cnblogs.com/Javame/archive/2014/03.html">2014年3月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_27" href="http://www.cnblogs.com/Javame/archive/2014/02.html">2014年2月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_28" href="http://www.cnblogs.com/Javame/archive/2014/01.html">2014年1月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_29" href="http://www.cnblogs.com/Javame/archive/2013/12.html">2013年12月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_30" href="http://www.cnblogs.com/Javame/archive/2013/03.html">2013年3月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_31" href="http://www.cnblogs.com/Javame/archive/2013/02.html">2013年2月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_32" href="http://www.cnblogs.com/Javame/archive/2012/11.html">2012年11月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_33" href="http://www.cnblogs.com/Javame/archive/2012/10.html">2012年10月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_34" href="http://www.cnblogs.com/Javame/archive/2012/09.html">2012年9月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_35" href="http://www.cnblogs.com/Javame/archive/2012/08.html">2012年8月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_36" href="http://www.cnblogs.com/Javame/archive/2012/05.html">2012年5月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_37" href="http://www.cnblogs.com/Javame/archive/2011/09.html">2011年9月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_38" href="http://www.cnblogs.com/Javame/archive/2011/08.html">2011年8月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_39" href="http://www.cnblogs.com/Javame/archive/2011/04.html">2011年4月 (1)</a> </li>
+
+</ul>
+
+</div>
+
+<div id="sidebar_imagecategory" class="catListImageCategory sidebar-block">
+<h3 class="catListTitle">相册</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_1_Link_0" href="http://www.cnblogs.com/Javame/gallery/604499.html" rel="nofollow">博图(13)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap">
+<div class="catListComment">
+<h3 class="catListTitle">最新评论</h3>
+
+	<div id="RecentCommentsBlock"><ul>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/Javame/p/3632473.html#3528044">1. Re:最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。</a></li>
+        <li class="recent_comment_body">@mathlpz@飞龙在天001dubbo管理台是一个web工程，给你给包解压到tomcat webapps下面，启动就行了。...</li>
+        <li class="recent_comment_author">--一十一.</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/Javame/p/3632473.html#3527953">2. Re:最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。</a></li>
+        <li class="recent_comment_body">按照博主的例子，运行Consumer.java中的main方法：报出如下警告是什么意思？Hello tom十月 11, 2016 11:06:04 上午 com.alibaba.com.caucho.......</li>
+        <li class="recent_comment_author">--飞龙在天001</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/Javame/p/3632473.html#3527943">3. Re:最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。</a></li>
+        <li class="recent_comment_body">同求管理界面是如何搞出来的</li>
+        <li class="recent_comment_author">--飞龙在天001</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/Javame/p/3632473.html#3527363">4. Re:最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。</a></li>
+        <li class="recent_comment_body">我太辣鸡了</li>
+        <li class="recent_comment_author">--Java小龙菜鸟</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/Javame/p/3632473.html#3527362">5. Re:最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。</a></li>
+        <li class="recent_comment_body">呜呜，听不懂啊</li>
+        <li class="recent_comment_author">--Java小龙菜鸟</li>
+</ul>
+</div>
+</div>
+</div></div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/Javame/p/3632473.html">1. 最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。(189005)</a></li><li><a href="http://www.cnblogs.com/Javame/p/3632708.html">2. 基于ZooKeeper的Dubbo注册中心(51089)</a></li><li><a href="http://www.cnblogs.com/Javame/p/3645481.html">3. 通过dubbo暴露接口调用方法，及基于zookeeper的dubbo涉及配置文件(31669)</a></li><li><a href="http://www.cnblogs.com/Javame/p/3753060.html">4. 安全攻防之SQL注入（通过sqlmap搞定所有问题）(15706)</a></li><li><a href="http://www.cnblogs.com/Javame/p/3725149.html">5. netstat监控大量ESTABLISHED连接与Time_Wait连接问题(15519)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap">
+<div class="catListFeedback">
+<h3 class="catListTitle">评论排行榜</h3>
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="http://www.cnblogs.com/Javame/p/3632473.html">1. 最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。(18)</a></li><li><a href="http://www.cnblogs.com/Javame/archive/2012/09/17/2689797.html">2. 紫金山游记(10)</a></li><li><a href="http://www.cnblogs.com/Javame/archive/2011/08/25/2153496.html">3. 一天学一个模式_第一天：策略模式(5)</a></li><li><a href="http://www.cnblogs.com/Javame/p/3513670.html">4. 华为Java编程军规，每季度代码验收标准(4)</a></li><li><a href="http://www.cnblogs.com/Javame/p/3968343.html">5. 软件测试人员必备Linux命令（初、中、高级）(4)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/Javame/p/3632473.html">1. 最近项目用到Dubbo框架，临时抱佛脚分享一下共探讨。(13)</a></li><li><a href="http://www.cnblogs.com/Javame/p/3867686.html">2. Linux Shell 小脚本经典收藏(4)</a></li><li><a href="http://www.cnblogs.com/Javame/p/3645481.html">3. 通过dubbo暴露接口调用方法，及基于zookeeper的dubbo涉及配置文件(2)</a></li><li><a href="http://www.cnblogs.com/Javame/p/4045229.html">4. 基于Ruby的Watir-WebDriver自动化测试框架(2)</a></li><li><a href="http://www.cnblogs.com/Javame/archive/2011/08/25/2153496.html">5. 一天学一个模式_第一天：策略模式(2)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2016 一十一.
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+</body></html>
