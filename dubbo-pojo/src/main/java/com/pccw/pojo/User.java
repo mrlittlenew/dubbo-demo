@@ -1,4 +1,4 @@
-package com.pccw.service.pojo;
+package com.pccw.pojo;
 
 import java.io.Serializable;
 
